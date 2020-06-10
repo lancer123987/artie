@@ -11,6 +11,7 @@
 
 @media screen and (min-width: 1200px) {}
 
+
 /*TABLET
 ======================*/
 
@@ -18,7 +19,14 @@
 
 @media screen and (max-width: 991px) {}
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .bookCase__show:before {
+        margin-bottom: 55px;
+    }
+    .bookCase__show__item {
+        margin-bottom: 50px;
+    }
+}
 
 @media screen and (min-width: 600px) and (max-width: 767px) {}
 
@@ -27,6 +35,13 @@
 ======================*/
 
 @media screen and (max-width: 599px) {
+    .bookCase__show:after {
+        margin-bottom: 10px;
+    }
+    .bookCase__show__item {
+        max-width: 80%;
+        margin: 0 auto 35px auto;
+    }
 }
 
 @media screen and (max-width: 330px) {}
@@ -50,7 +65,7 @@
 /* Safari 5~6 ONLY */
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    ::i-block-chrome,
+     ::i-block-chrome,
     .xxxx {}
 }
 
