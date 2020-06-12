@@ -499,38 +499,66 @@
         margin: 0 auto;
         line-height: 35px;
     }
-    /* .bookCase__page__count {
-        text-align: center;
-        margin: 0 auto 125px auto;
-    }
     
-    .bookCase__page__count span {
-        display: inline-block;
+    .bookCase__page .page-item {
         width: 30px;
         height: 30px;
+        margin: 0 2.5px;
+        padding: 0;
+    }
+    
+    .bookCase__page .page-item .page-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
         border-radius: 50%;
         color: var(--text-color);
-        text-align: center;
         line-height: 30px;
-        margin: 0 2.5px;
-        cursor: pointer;
+        text-align: center;
+        padding: 0;
         transition: all .2s ease-in-out;
     }
     
-    .bookCase__page__count span:hover {
+    .bookCase__page .page-item.active .page-link {
+        background-color: var(--main-red);
+        color: #FFF;
+    }
+    
+    .bookCase__page .page-link:hover {
         background-color: var(--main-red);
         color: #FFF;
         opacity: .7;
     }
     
-    .bookCase__page__count span.active {
-        background-color: var(--main-red);
-        color: #FFF;
+    .bookCase__page .page-item:first-child,
+    .bookCase__page .page-item:last-child {
+        width: auto;
+        height: auto;
     }
     
-    .bookCase__page__count span.active:hover {
-        opacity: 1;
-    } */
+    .bookCase__page .page-item:first-child .page-link,
+    .bookCase__page .page-item:last-child .page-link {
+        border-radius: 0;
+        transition: all .2s ease-in-out;
+    }
+    
+    .bookCase__page .page-item:first-child .page-link:hover,
+    .bookCase__page .page-item:last-child .page-link:hover {
+        color: var(--title-dark);
+        background-color: transparent;
+        opacity: 7;
+    }
+    
+    .bookCase__page .page-item:first-child .page-link:before {
+        content: '<';
+        display: inline;
+    }
+    
+    .bookCase__page .page-item:last-child .page-link:after {
+        content: '>';
+        display: inline;
+    }
     /****main end***/
     /****footer start****/
     
