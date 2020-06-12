@@ -14,4 +14,12 @@ $(document).ready(function() {
     $('.bt_click').mouseup(function() {
         $(this).removeClass('active');
     });
+    $('.goToTop').click(function() {
+        var target = $(this).attr('href');
+        var position = $("html, body").offset().top;
+        var duration = 1000;
+        $("html, body").stop().animate({
+            scrollTop: position
+        }, duration);
+    });
 });

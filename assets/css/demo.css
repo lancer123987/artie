@@ -23,6 +23,7 @@
     /****變數 end****/
     
     body {
+        position: relative;
         background: url(../images/texture_white.png);
     }
     
@@ -593,7 +594,7 @@
     /****goToTop start***/
     
     .goToTop {
-        position: fixed;
+        position: absolute;
         right: 30px;
         bottom: 180px;
         display: block;
@@ -603,14 +604,20 @@
         background-size: cover;
         border: none;
         cursor: pointer;
+        z-index: 10;
     }
     
     .goToTop:hover {
         opacity: .7;
     }
     
+    .goToTop:focus {
+        outline: none;
+    }
+    
     .goToTop img {
-        filter: hue-rotate(90deg);
+        width: 50%;
+        margin: 0 auto;
     }
     /****goToTop end***/
     /****footer start****/

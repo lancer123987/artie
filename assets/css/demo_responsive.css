@@ -162,6 +162,9 @@
     .bookCase__show__item {
         margin-bottom: 50px;
     }
+    .goToTop {
+        right: calc(50% - 25px);
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {}
