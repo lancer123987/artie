@@ -109,7 +109,8 @@
     }
     
     .mainList .dropdown-menu {
-        left: calc(50% - 80px);
+        min-width: 150px;
+        left: calc(50% - 75px);
         padding: 15px 0;
         border: none;
         border-radius: 10px;
@@ -219,7 +220,21 @@
         opacity: .7;
     }
     
-    .subList__sns {}
+    .subList .subList__share__sns {
+        left: calc(50% - 30px);
+        width: 60px;
+        min-width: 0;
+        margin-top: 8px;
+    }
+    
+    .subList .subList__share__sns img {
+        width: auto;
+        height: 25px;
+    }
+    
+    .mainList .subList .dropdown-menu li:after {
+        width: 35px;
+    }
     /****header end****/
     /****banner start***/
     

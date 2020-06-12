@@ -53,13 +53,6 @@
         height: 60px;
         padding-top: 10px;
     }
-    .mainList a {
-        font-size: 13px;
-    }
-    .mainList .navbar-brand img {
-        width: 85px;
-        margin-right: 5px;
-    }
     main {
         padding-top: 60px;
     }
@@ -71,7 +64,16 @@
         top: 5px;
         right: 50px;
     }
-    .share {
+    .mainList .navbar-nav {
+        background-color: rgba(255, 255, 255, .85);
+        min-height: 100vh;
+        margin-top: 10px;
+    }
+    .mainList .navbar-brand img {
+        width: 85px;
+        margin-right: 5px;
+    }
+    .subList__share {
         display: none;
     }
 }
