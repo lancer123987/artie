@@ -15,11 +15,122 @@
 /*TABLET
 ======================*/
 
-@media screen and (max-width:1199px) and (orientation:landscape) {}
+@media screen and (max-width: 1350px) {
+    .mainList {
+        width: calc(100% - 30px);
+    }
+    .mainList li {
+        margin-left: 15px;
+    }
+    .subList {
+        margin-left: 16px;
+    }
+}
 
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 1300px) {
+    .mainList li {
+        margin-left: 0;
+    }
+    .banner__item {
+        width: 45%;
+        text-align: left;
+    }
+    .banner__item:nth-child(1) {
+        order: 2;
+    }
+    .banner__item:nth-child(1) img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .banner__cover {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    header {
+        height: 60px;
+        padding-top: 10px;
+    }
+    .mainList a {
+        font-size: 13px;
+    }
+    .mainList .navbar-brand img {
+        width: 85px;
+        margin-right: 5px;
+    }
+    main {
+        padding-top: 60px;
+    }
+    .mainList {
+        width: calc(100% - 30px);
+    }
+    .subList {
+        position: absolute;
+        top: 5px;
+        right: 50px;
+    }
+    .share {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .banner {
+        padding: 80px 0;
+    }
+    .banner__item {
+        width: 90%;
+    }
+    .banner__item:nth-child(1) {
+        margin-top: -30vw;
+    }
+    .banner__item:nth-child(1) img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .banner__title {
+        padding: 55px 0;
+    }
+    .banner h1:after {
+        margin: 25px auto 25px 0;
+    }
+    .banner__title:before,
+    .banner__title:after {
+        display: none;
+    }
+    .bookCase {
+        margin: 45px auto 0 auto;
+    }
+    .bookCase__head {
+        align-items: flex-start;
+    }
+    .bookCase__head img {
+        width: 100%;
+    }
+    .bookCase__head__content__chapter div a {
+        width: calc(50% - 10px);
+    }
+}
 
 @media screen and (max-width: 767px) {
+    .banner__cover {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .7) 70%, rgba(255, 255, 255, 0) 100%);
+    }
+    .bookCase__head img {
+        width: 80%;
+        margin: 0 auto 30px auto;
+    }
+    .bookCase__head__content__title div {
+        width: 100%;
+        margin: 0 auto 10px auto;
+    }
+    .bookCase__head__content__title a {
+        width: 100%;
+    }
     .bookCase__show:before {
         margin-bottom: 55px;
     }
@@ -35,6 +146,19 @@
 ======================*/
 
 @media screen and (max-width: 599px) {
+    .banner {
+        padding: 40px 0 15px 0;
+    }
+    .banner h1:after {
+        margin: 25px auto;
+    }
+    .banner__item,
+    .banner__title {
+        text-align: center;
+    }
+    .bookCase__head__content__chapter div a {
+        width: 100%
+    }
     .bookCase__show:after {
         margin-bottom: 10px;
     }

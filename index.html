@@ -31,63 +31,78 @@
 <body>
     <!-- header區塊 -->
     <header>
-        <div class="mainList row">
-            <a class="col-md-3" href="#" title="回首頁"><img src="assets/images/logo.svg " alt="新東陽">企業社會責任網</a>
-            <nav class="nav col-md-8">
-                <ul>
+        <nav class="mainList navbar navbar-expand-xl">
+            <a class="navbar-brand" href="#" title="回首頁"><img src="assets/images/logo.svg " alt="新東陽">企業社會責任網</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" title="永續發展管理">永續發展管理</a>
+                        <a class="nav-link dropdown-toggle" id="list_item01" data-toggle="dropdown" title="永續發展管理">永續發展管理</a>
                         <ul class="dropdown-menu">
-                            <li>
+                            <li class="dropdown-item">
                                 <a></a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" title="關於新東陽">關於新東陽</a>
+                        <a class="nav-link dropdown-toggle" id="list_item02" data-toggle="dropdown" title="關於新東陽">關於新東陽</a>
+                        <ul class="dropdown-menu" aria-labelledby="list_item02">
+                            <li class="dropdown-item">
+                                <a href="#" title="公司簡介">公司簡介</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" title="經營策略">經營策略</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" title="財務績效">財務績效</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" title="公司治理架構">公司治理架構</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" title="法規遵循">法規遵循</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" id="list_item03" data-toggle="dropdown" title="永續產品與服務">永續產品與服務</a>
                         <ul class="dropdown-menu">
-                            <li>
+                            <li class="dropdown-item">
                                 <a></a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" title="永續產品與服務">永續產品與服務</a>
+                        <a class="nav-link dropdown-toggle" id="list_item04" data-toggle="dropdown" title="環境永續">環境永續</a>
                         <ul class="dropdown-menu">
-                            <li>
+                            <li class="dropdown-item">
                                 <a></a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" title="環境永續">環境永續</a>
+                        <a class="nav-link dropdown-toggle" id="list_item05" data-toggle="dropdown" title="員工關懷及社會參與">員工關懷及社會參與</a>
                         <ul class="dropdown-menu">
-                            <li>
+                            <li class="dropdown-item">
                                 <a></a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" title="員工關懷及社會參與">員工關懷及社會參與</a>
+                        <a class="nav-link dropdown-toggle" id="list_item06" data-toggle="dropdown" title="CSR報告書">CSR報告書</a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" title="CSR報告書">CSR報告書</a>
-                        <ul class="dropdown-menu">
-                            <li>
+                            <li class="dropdown-item">
                                 <a></a>
                             </li>
                         </ul>
                     </li>
                 </ul>
-            </nav>
-            <ul class="subList col-md-1">
-                <li>
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="分享"><img src="assets/images/share.svg " alt="分享"></a>
+            </div>
+            <ul class="subList nav">
+                <li class="share nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" title="分享"><img src="assets/images/share.svg " alt="分享"></a>
                     <ul class="subList__sns dropdown-menu">
                         <li>
                             <a title=""></a>
@@ -103,10 +118,10 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="" title=" 英文版">EN</a>
                 </li>
-            </ul>
+        </nav>
         </div>
     </header>
     <!-- header區塊 end -->
@@ -116,10 +131,11 @@
         <!-- 麵包屑 -->
         <!-- 麵包屑 end -->
         <div class="banner">
-            <div>
+            <div class="banner__item">
                 <img src="assets/images/CSR_banner.png">
             </div>
-            <div>
+            <div class="banner__cover"></div>
+            <div class="banner__item">
                 <div class="banner__title">
                     <h2>CSR報告書</h2>
                     <h1><img src="assets/images/CSR_title.png" alt="報告書下載"></h1>
