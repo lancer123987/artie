@@ -136,6 +136,9 @@
     .bookCase__head__content__chapter div a {
         width: calc(50% - 10px);
     }
+    .bookCase__page {
+        margin: 0 auto 100px auto;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -187,6 +190,16 @@
     .bookCase__show__item {
         max-width: 80%;
         margin: 0 auto 35px auto;
+    }
+    .bookCase__page {
+        margin: 0 auto 60px auto;
+    }
+    .bookCase__page .page-item {
+        display: none;
+    }
+    .bookCase__page .page-item:first-child,
+    .bookCase__page .page-item:last-child {
+        display: block;
     }
 }
 
