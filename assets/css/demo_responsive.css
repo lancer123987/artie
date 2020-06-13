@@ -90,6 +90,9 @@
     .bookCase__head__content__title a {
         width: 100%;
     }
+    .bookCase__head__content__title a.active {
+        margin-top: 6px;
+    }
     .bookCase__show:before {
         margin-bottom: 55px;
     }
