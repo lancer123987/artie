@@ -354,6 +354,15 @@ header.active {
     margin: 0 auto 125px auto;
 }
 
+.pageArea:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 0 auto 20px auto;
+    background: url(../../images/texture_black.png);
+}
+
 .pageArea .page-item {
     width: 30px;
     height: 30px;

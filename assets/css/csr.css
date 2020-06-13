@@ -102,11 +102,10 @@
     
     .bookCase__show {
         width: 100%;
-        margin: 0 auto 20px auto;
+        margin: 0 auto;
     }
     
-    .bookCase__show:before,
-    .bookCase__show:after {
+    .bookCase__show:before {
         content: '';
         display: block;
         width: 100%;
