@@ -6,6 +6,10 @@
     }
     /**當期報告書**/
     
+    .banner {
+        background-image: url(../images/CSR_bannerBg.jpg);
+    }
+    
     .bookCase__head {
         align-items: flex-end;
         margin: 0 auto 35px auto;

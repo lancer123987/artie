@@ -249,7 +249,8 @@ header.active {
 /****banner start***/
 
 .banner {
-    background: url(../../images/CSR_bannerBg.jpg) no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     padding: 150px 0;
     display: flex;
