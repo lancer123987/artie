@@ -15,22 +15,7 @@
 /*TABLET
 ======================*/
 
-@media screen and (max-width: 1350px) {
-    .mainList {
-        width: calc(100% - 30px);
-    }
-    .mainList li {
-        margin-left: 15px;
-    }
-    .subList {
-        margin-left: 16px;
-    }
-}
-
 @media screen and (max-width: 1300px) {
-    .mainList li {
-        margin-left: 0;
-    }
     .banner__item {
         width: 45%;
         text-align: left;
@@ -48,55 +33,7 @@
     }
 }
 
-@media screen and (max-width:1199px) {
-    header {
-        height: 60px;
-        padding-top: 10px;
-    }
-    main {
-        padding-top: 60px;
-    }
-    .mainList {
-        width: calc(100% - 30px);
-    }
-    .mainList .navbar-nav {
-        background-color: rgba(255, 255, 255, .85);
-        min-height: 100vh;
-        margin-top: 10px;
-        padding-top: 40px;
-    }
-    .mainList .navbar-nav a {
-        text-align: center;
-    }
-    .mainList .navbar-brand img {
-        width: 85px;
-        margin-right: 5px;
-    }
-    .mainList ul li .dropdown-menu {
-        filter: none;
-        background-color: transparent;
-        border-radius: 0;
-        padding: 0 0 40px 0;
-    }
-    .mainList .dropdown-menu li a {
-        font-size: 14px;
-    }
-    .mainList .dropdown-toggle::after {
-        margin-right: -10px;
-    }
-    .mainList .dropdown-menu li:after {
-        width: 80px;
-        margin: 10px auto;
-    }
-    .subList {
-        position: absolute;
-        top: 5px;
-        right: 50px;
-    }
-    .subList__share {
-        display: none;
-    }
-}
+@media screen and (max-width:1199px) {}
 
 @media screen and (max-width: 991px) {
     .banner {
@@ -136,9 +73,6 @@
     .bookCase__head__content__chapter div a {
         width: calc(50% - 10px);
     }
-    .bookCase__page {
-        margin: 0 auto 100px auto;
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -161,9 +95,6 @@
     }
     .bookCase__show__item {
         margin-bottom: 50px;
-    }
-    .goToTop {
-        right: calc(50% - 25px);
     }
 }
 
@@ -193,16 +124,6 @@
     .bookCase__show__item {
         max-width: 80%;
         margin: 0 auto 35px auto;
-    }
-    .bookCase__page {
-        margin: 0 auto 60px auto;
-    }
-    .bookCase__page .page-item {
-        display: none;
-    }
-    .bookCase__page .page-item:first-child,
-    .bookCase__page .page-item:last-child {
-        display: block;
     }
 }
 
