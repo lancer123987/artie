@@ -4,4 +4,29 @@
         background-image: url(../images/recent_bannerBg.jpg);
         background-position: center right;
     }
+    
+    .recent {
+        padding-top: 60px;
+    }
+    
+    .recent__title {
+        text-align: center;
+        color: var(--main-red);
+        font-family: 'Noto Serif CJK TC', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        vertical-align: middle;
+        margin: 0 auto 60px auto;
+    }
+    
+    .recent__title:before,
+    .recent__title:after {
+        content: '';
+        display: inline-block;
+        width: 3px;
+        height: 1em;
+        background-color: var(--main-red);
+        vertical-align: middle;
+        margin: 0 25px;
+    }
     /****main end***/
