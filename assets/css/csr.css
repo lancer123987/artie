@@ -1,10 +1,5 @@
     /****main start***/
     
-    .banner {
-        background: url(../images/CSR_bannerBg.jpg) no-repeat center;
-        background-size: cover;
-    }
-    
     .bookCase {
         width: 90%;
         margin: -60px auto 0 auto;
