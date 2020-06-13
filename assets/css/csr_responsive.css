@@ -1,17 +1,5 @@
 @charset "UTF-8";
 
-/*DESKTOP
-======================*/
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {}
-
-@media screen and (min-width: 992px) {}
-
-@media screen and (min-width: 1200px) {}
-
-
 /*TABLET
 ======================*/
 
@@ -73,41 +61,3 @@
         margin: 0 auto 35px auto;
     }
 }
-
-@media screen and (max-width: 330px) {}
-
-
-/* ONLY
-======================*/
-
-@media screen and (-webkit-min-device-pixel-ratio:2) and (min-width: 768px) and (max-width: 991px) {}
-
-@media screen and (-webkit-min-device-pixel-ratio:2) and (max-width: 767px) {}
-
-
-/* Firefox All */
-
-@-moz-document url-prefix() {
-    .xxxx {}
-}
-
-
-/* Safari 5~6 ONLY */
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-     ::i-block-chrome,
-    .xxxx {}
-}
-
-
-/* Safari 6以上 ONLY */
-
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
-    @media {
-        _:-webkit-full-screen,
-        .xxxx {}
-    }
-}
-
-
-/**/
