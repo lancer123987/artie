@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/*DESKTOP
+======================*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
+
+
+/*TABLET
+======================*/
+
+@media screen and (max-width:1300px) {
+    .banner__item:nth-child(1) img {
+        height: 600px;
+        right: -150px;
+        z-index: auto;
+    }
+}
+
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width: 991px) {
+    .banner__item:nth-child(1) img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {}
+
+
+/* MOBILE
+======================*/
+
+@media screen and (max-width: 599px) {
+    .banner {
+        height: 300px;
+    }
+    .banner__item:nth-child(1) img {
+        position: relative;
+        width: 100%;
+        top: -100px;
+        right: -4%;
+    }
+    .banner__item:nth-child(3) {
+        top: 100px;
+    }
+    .banner h1 img {
+        width: 100%;
+        height: auto;
+    }
+    .kktix .intro {
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 330px) {}
+
+
+/* ONLY
+======================*/
+
+@media screen and (-webkit-min-device-pixel-ratio:2) and (min-width: 768px) and (max-width: 991px) {}
+
+@media screen and (-webkit-min-device-pixel-ratio:2) and (max-width: 767px) {}
+
+
+/* Firefox All */
+
+@-moz-document url-prefix() {
+    .xxxx {}
+}
+
+
+/* Safari 5~6 ONLY */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+     ::i-block-chrome,
+    .xxxx {}
+}
+
+
+/* Safari 6以上 ONLY */
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    @media {
+        _:-webkit-full-screen,
+        .xxxx {}
+    }
+}
+
+
+/**/

@@ -24,8 +24,8 @@
     <!-- CSS 區塊 start -->
     <link rel="stylesheet" href="assets/css/common/bootstrap-4.0.0.min.css">
     <link rel="stylesheet" href="assets/css/common/common.css?061315">
-    <link rel="stylesheet" href="assets/css/recent.css?061315">
-    <link rel="stylesheet" href="assets/css/recent_responsive.css?061315">
+    <link rel="stylesheet" href="assets/css/kktix.css?061315">
+    <link rel="stylesheet" href="assets/css/kktix_responsive.css?061315">
     <!-- CSS 區塊 end -->
 </head>
 
@@ -143,43 +143,206 @@
                 <div class="banner__title">
                     <h2>員工關懷及社會參與</h2>
                     <h1><img src="assets/images/kktix_title.png" alt="麥式新東陽基金會"></h1>
-                    <p>良善治理事責任的轉移，是永續的傳遞</p>
+                    <p>持續延續這份愛及溫暖，</p>
+                    <p>如同沐浴初春雨露，滋潤大地，展現生機和希望。</p>
                 </div>
             </div>
         </div>
-        <div class="recent container">
-            <div class="news row">
-                <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="新東陽收餐盤機器人服務正式啟用">
-                    <div class="news__item__img" href="#" title="捐助「家扶基金會」菁英綠種子獎助學金計畫">
-                        <img src="assets/images/recent01.jpg" alt="捐助「家扶基金會」菁英綠種子獎助學金計畫">
-                        <div class="news__item__cover"></div>
-                    </div>
-                    <p class="recent__item__date">2019.02.25</p>
-                    <h4>捐助「家扶基金會」菁英綠種子獎助學金計畫</h4>
-                    <p class="recent__item__content">基金會與家扶基金會合作，進行獎助學金計畫，協助就讀公私立高中職、五專一至三年級之清寒學子減輕經濟壓力，讓其能致力於就學</p>
-                    <span class="news__item__more">MORE</span>
-                </a>
-                <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
-                    <div class="news__item__img">
-                        <img src="assets/images/recent02.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
-                        <p class="recent__item__content"></p>
-                        <div class="news__item__cover"></div>
-                    </div>
-                    <p class="recent__item__date">2019.02.09</p>
-                    <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
-                    <p class="recent__item__content">今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過</p>
-                    <span class="news__item__more">MORE</span>
-                </a>
-                <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
-                    <div class="news__item__img">
-                        <img src="assets/images/recent03.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
-                        <div class="news__item__cover"></div>
-                    </div>
-                    <p class="recent__item__date">2019.02.25</p>
-                    <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
-                    <p class="recent__item__content">今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過</p>
-                    <span class="news__item__more">MORE</span>
-                </a>
+        <div class="kktix container">
+            <div class="intro">
+                <p>新東陽用實際的行動， 關懷這 片土地的人與情。創辦人麥幸夫先生及董事長麥寬成先生深信「取之於社會，用之於社會」的重要性，希望以更積極地作為參與社會公益慈善活動，將企業經營成果回饋給社會，讓需要幫助的人獲得協助，讓需要關懷的人獲得照顧，讓社會上的愛、溫暖以及美好，持續的轉動著。民國七十三年成立「麥氏新東陽基金會」長期致力於青少年助學方案及社會公益團體之活動，特別是針對弱勢或清寒的在學學子以及偏遠地區的孩童希望能藉此提升其未來就業和升學能力進而增長其學子們自身的競爭力。
+                </p>
+            </div>
+            <ul class="newsList nav nav-tabs justify-content-center" id="listTab">
+                <a class="active" href="#all" data-toggle="tab" title="ALL">ALL</a>
+                <a data-toggle="tab" href="#education" title="教育類型">教育類型</a>
+                <a data-toggle="tab" href="#society" title="社會關懷">社會關懷</a>
+                <a data-toggle="tab" href="#community" title="社區服務">社區服務</a>
+                <a data-toggle="tab" href="#family" title="家庭關懷">家庭關懷</a>
+            </ul>
+            <select class="newsListSelect">
+                <option value="all">ALL</option>
+                <option value="education">教育類型</option>
+                <option value="society">社會關懷</option>
+                <option value="community">社區服務</option>
+                <option value="family">家庭關懷</option>
+            </select>
+            <div class="tab-content">
+                <div class="news row" id="all">
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="新東陽收餐盤機器人服務正式啟用">
+                        <div class="news__item__img" href="#" title="捐助「家扶基金會」菁英綠種子獎助學金計畫">
+                            <img src="assets/images/kktix01.jpg" alt="捐助「家扶基金會」菁英綠種子獎助學金計畫">
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.25</p>
+                        <h4>捐助「家扶基金會」菁英綠種子獎助學金計畫</h4>
+                        <p class="recent__item__content">基金會與家扶基金會合作，進行獎助學金計畫，協助就讀公私立高中職、五專一至三年級之清寒學子減輕經濟壓力，讓其能致力於就學</p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                        <div class="news__item__img">
+                            <img src="assets/images/kktix02.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                            <p class="recent__item__content"></p>
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.09</p>
+                        <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
+                        <p class="recent__item__content">
+                            今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過
+                        </p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                        <div class="news__item__img">
+                            <img src="assets/images/kktix03.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.25</p>
+                        <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
+                        <p class="recent__item__content">今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過</p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                </div>
+                <div class="news row" id="education">
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="新東陽收餐盤機器人服務正式啟用">
+                        <div class="news__item__img" href="#" title="捐助「家扶基金會」菁英綠種子獎助學金計畫">
+                            <img src="assets/images/kktix01.jpg" alt="捐助「家扶基金會」菁英綠種子獎助學金計畫">
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.25</p>
+                        <h4>教育-捐助「家扶基金會」菁英綠種子獎助學金計畫</h4>
+                        <p class="recent__item__content">基金會與家扶基金會合作，進行獎助學金計畫，協助就讀公私立高中職、五專一至三年級之清寒學子減輕經濟壓力，讓其能致力於就學</p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                        <div class="news__item__img">
+                            <img src="assets/images/kktix02.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                            <p class="recent__item__content"></p>
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.09</p>
+                        <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
+                        <p class="recent__item__content">
+                            今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過
+                        </p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                        <div class="news__item__img">
+                            <img src="assets/images/kktix03.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.25</p>
+                        <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
+                        <p class="recent__item__content">今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過</p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                </div>
+                <div class="news row" id="society">
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="新東陽收餐盤機器人服務正式啟用">
+                        <div class="news__item__img" href="#" title="捐助「家扶基金會」菁英綠種子獎助學金計畫">
+                            <img src="assets/images/kktix01.jpg" alt="捐助「家扶基金會」菁英綠種子獎助學金計畫">
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.25</p>
+                        <h4>社會-捐助「家扶基金會」菁英綠種子獎助學金計畫</h4>
+                        <p class="recent__item__content">基金會與家扶基金會合作，進行獎助學金計畫，協助就讀公私立高中職、五專一至三年級之清寒學子減輕經濟壓力，讓其能致力於就學</p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                        <div class="news__item__img">
+                            <img src="assets/images/kktix02.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                            <p class="recent__item__content"></p>
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.09</p>
+                        <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
+                        <p class="recent__item__content">
+                            今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過
+                        </p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                        <div class="news__item__img">
+                            <img src="assets/images/kktix03.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.25</p>
+                        <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
+                        <p class="recent__item__content">今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過</p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                </div>
+                <div class="news row" id="community">
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="新東陽收餐盤機器人服務正式啟用">
+                        <div class="news__item__img" href="#" title="捐助「家扶基金會」菁英綠種子獎助學金計畫">
+                            <img src="assets/images/kktix01.jpg" alt="捐助「家扶基金會」菁英綠種子獎助學金計畫">
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.25</p>
+                        <h4>社區-捐助「家扶基金會」菁英綠種子獎助學金計畫</h4>
+                        <p class="recent__item__content">基金會與家扶基金會合作，進行獎助學金計畫，協助就讀公私立高中職、五專一至三年級之清寒學子減輕經濟壓力，讓其能致力於就學</p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                        <div class="news__item__img">
+                            <img src="assets/images/kktix02.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                            <p class="recent__item__content"></p>
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.09</p>
+                        <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
+                        <p class="recent__item__content">
+                            今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過
+                        </p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                        <div class="news__item__img">
+                            <img src="assets/images/kktix03.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.25</p>
+                        <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
+                        <p class="recent__item__content">今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過</p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                </div>
+                <div class="news row" id="family">
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="新東陽收餐盤機器人服務正式啟用">
+                        <div class="news__item__img" href="#" title="捐助「家扶基金會」菁英綠種子獎助學金計畫">
+                            <img src="assets/images/kktix01.jpg" alt="捐助「家扶基金會」菁英綠種子獎助學金計畫">
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.25</p>
+                        <h4>家庭-捐助「家扶基金會」菁英綠種子獎助學金計畫</h4>
+                        <p class="recent__item__content">基金會與家扶基金會合作，進行獎助學金計畫，協助就讀公私立高中職、五專一至三年級之清寒學子減輕經濟壓力，讓其能致力於就學</p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                        <div class="news__item__img">
+                            <img src="assets/images/kktix02.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                            <p class="recent__item__content"></p>
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.09</p>
+                        <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
+                        <p class="recent__item__content">
+                            今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過
+                        </p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                    <a class="news__item col-md-4 col-sm-6 col-12" href="#" title="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                        <div class="news__item__img">
+                            <img src="assets/images/kktix03.jpg" alt="贊助「臺北醫學大學醫療服務隊」花蓮服務">
+                            <div class="news__item__cover"></div>
+                        </div>
+                        <p class="recent__item__date">2019.02.25</p>
+                        <h4>贊助「臺北醫學大學醫療服務隊」花蓮服務</h4>
+                        <p class="recent__item__content">今雖然醫療資源普及，但其實民眾對於用藥、營養保健、牙齒保健等等的資訊，尚屬於薄弱的狀態，因此在服務內容中，期望透過</p>
+                        <span class="news__item__more">MORE</span>
+                    </a>
+                </div>
             </div>
 
             <nav class="pageArea" aria-label="Page navigation">

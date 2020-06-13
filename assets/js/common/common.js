@@ -16,13 +16,40 @@ $(document).ready(function() {
     $('.bt_click').mouseup(function() {
         $(this).removeClass('active');
     });
+    //news切換
+    $('.tab-content .news').hide();
+    $('#all').show();
+    $('.newsList a').click(function() {
+        $('.newsList a').removeClass('active');
+        $(this).addClass('active');
+        var target = $(this).attr('href');
+        $('.tab-content .news').hide();
+        $(target).show();
+        var linkVal = target.split("#", 2);
+        $(".newsListSelect").val(linkVal[1]);
+    });
+    $(".newsListSelect").change(function() {
+        var listVal = $(this).val();
+        var target = '#' + listVal;
+        $('.tab-content .news').hide();
+        $(target).show();
+        $(".newsList a").each(function() {
+            var link = $(this).attr('href');
+            if (link == target) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+        });
+    });
     //回到頂部
     $('.goToTop').click(function() {
-        var target = $(this).attr('href');
         var position = $("html, body").offset().top;
         var duration = 1000;
         $("html, body").stop().animate({
             scrollTop: position
         }, duration);
     });
+    var tt = $('.newsListSelect').val();
+    console.log(tt);
 });

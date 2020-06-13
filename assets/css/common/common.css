@@ -96,6 +96,7 @@ header {
 
 header.active {
     background-color: rgba(255, 255, 255, .85);
+    box-shadow: rgba(0, 0, 0, .2) 0 2px 5px;
 }
 
 .mainList {
@@ -350,6 +351,86 @@ header.active {
 
 /****news start****/
 
+.newsList {
+    margin: 10px auto 75px auto;
+}
+
+.newsList::before,
+.newsList::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: url(../../images/texture_black.png);
+}
+
+.newsList::before {
+    margin-bottom: 20px;
+}
+
+.newsList::after {
+    margin-top: 20px;
+}
+
+.newsList a {
+    position: relative;
+    width: 100px;
+    color: #000;
+    font-family: 'Microsoft JhengHei', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: .6;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.newsList a:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: calc(50% - 1.5px);
+    right: -1.5px;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 50%;
+}
+
+.newsList a:last-child:after {
+    display: none;
+}
+
+.newsList a:hover {
+    color: var(--main-red);
+    opacity: 1;
+}
+
+.newsList a.active {
+    color: var(--main-red);
+    opacity: 1;
+}
+
+.tab-content>.news.active {
+    display: flex;
+}
+
+.newsListSelect {
+    width: 100%;
+    background: #bfbfbf;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.newsListSelect:focus {
+    outline: none;
+}
+
+.newsListSelect option:focus {
+    outline: none;
+}
+
 .news__item {
     margin-bottom: 70px;
     padding-bottom: 30px;
@@ -439,6 +520,17 @@ header.active {
     font-weight: normal;
     color: #5c5c5c;
     vertical-align: top;
+}
+
+.recent__item__content {
+    color: var(--text-color);
+    font-size: 15px;
+    font-family: var(--content-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .news__item__more {
@@ -740,6 +832,8 @@ footer p {
     header {
         height: 60px;
         padding-top: 10px;
+        background-color: rgba(255, 255, 255, .7);
+        box-shadow: rgba(0, 0, 0, .2) 0 2px 5px;
     }
     main {
         padding-top: 60px;
@@ -835,13 +929,26 @@ footer p {
 @media screen and (max-width: 599px) {
     .banner {
         padding: 40px 0 15px 0;
+        height: 300px;
     }
     .banner h1:after {
         margin: 25px auto;
     }
+    .banner__title {
+        padding: 0 0 55px 0;
+    }
     .banner__item,
     .banner__title {
         text-align: center;
+    }
+    .banner h1 img {
+        margin: 0 auto;
+    }
+    .newsList {
+        display: none;
+    }
+    .newsListSelect {
+        display: block;
     }
     .news__item {
         margin-bottom: 25px;
