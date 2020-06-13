@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Noto Serif CJK TC';
-    src: url('../fonts/fonts/Noto_Serif_TC/NotoSerifTC-Medium.otf') format("otf");
+    src: url('../../fonts/fonts/Noto_Serif_TC/NotoSerifTC-Medium.otf') format("otf");
 }
 
 
@@ -28,7 +28,7 @@
 
 body {
     position: relative;
-    background: url(../images/texture_white.png);
+    background: url(../../images/texture_white.png);
 }
 
 div {
@@ -178,7 +178,7 @@ header.active {
     height: 40px;
     border-radius: 50%;
     outline: none;
-    background: url(../images/navIcon.svg) no-repeat center, url(../images/blackDot.png) no-repeat center;
+    background: url(../../images/navIcon.svg) no-repeat center, url(../../images/blackDot.png) no-repeat center;
     background-size: cover;
     padding: 0;
 }
@@ -249,7 +249,6 @@ header.active {
 /****banner start***/
 
 .banner {
-    background: url(../images/CSR_bannerBg.jpg) no-repeat center;
     background-size: cover;
     padding: 150px 0;
     display: flex;
@@ -331,7 +330,7 @@ header.active {
     left: 0;
     width: 17px;
     height: 40px;
-    background: url(../images/bannerBorder.svg) no-repeat top left;
+    background: url(../../images/bannerBorder.svg) no-repeat top left;
     background-size: cover;
 }
 
@@ -427,7 +426,7 @@ header.active {
     content: '';
     width: 15px;
     height: 25px;
-    background: url(../images/next.svg) no-repeat center;
+    background: url(../../images/next.svg) no-repeat center;
     background-size: cover;
     display: inline-block;
     margin: 0 0 0 25px;
@@ -456,7 +455,7 @@ header.active {
     display: block;
     width: 50px;
     height: 50px;
-    background: url(../images/blackDot.png) no-repeat center;
+    background: url(../../images/blackDot.png) no-repeat center;
     background-size: cover;
     border: none;
     cursor: pointer;
@@ -485,7 +484,7 @@ header.active {
 footer {
     width: 100%;
     padding: 30px 0;
-    background: url(../images/footerBg.jpg) no-repeat center;
+    background: url(../../images/footerBg.jpg) no-repeat center;
     background-size: cover;
 }
 
