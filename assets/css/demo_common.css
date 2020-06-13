@@ -178,9 +178,8 @@ header.active {
     height: 40px;
     border-radius: 50%;
     outline: none;
-    background: url(../images/navIcon.svg) no-repeat center;
+    background: url(../images/navIcon.svg) no-repeat center, url(../images/blackDot.png) no-repeat center;
     background-size: cover;
-    background-color: #000;
     padding: 0;
 }
 
