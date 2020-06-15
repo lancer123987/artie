@@ -681,12 +681,12 @@
         margin: 0 auto 25px auto;
     }
     
-    .contentArea ol {
-        padding: 0;
+    .contentArea p+ol {
+        margin-top: -10px;
     }
     
-    .contentArea ol>p {
-        margin-bottom: 15px;
+    .contentArea ol {
+        padding: 0;
     }
     
     .contentArea ol li {
