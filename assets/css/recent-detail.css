@@ -4,5 +4,27 @@
     background-image: url(../images/recent_bannerBg.jpg);
 }
 
+.detailBanner_talk {
+    position: absolute;
+    width: 300px;
+    top: -90px;
+    left: calc(50% - 300px);
+}
+
+@media screen and (max-width: 767px) {
+    .detailBanner_talk {
+        width: 300px;
+        top: -25px;
+        left: auto;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .detailBanner_talk {
+        display: none;
+    }
+}
+
 
 /****main end***/
