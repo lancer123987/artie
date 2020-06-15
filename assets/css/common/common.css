@@ -667,16 +667,49 @@
         margin: 0 auto 60px auto;
     }
     
+    .contentArea h2 {
+        font-family: 'Microsoft JhengHei', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        line-height: 2;
+    }
+    
     .contentArea p {
         color: var(--text-color);
         line-height: 2;
         margin: 0 auto 25px auto;
     }
     
+    .contentArea ol {
+        padding: 0;
+    }
+    
+    .contentArea ol>p {
+        margin-bottom: 15px;
+    }
+    
+    .contentArea ol li {
+        margin: 0 auto 15px 1.2em;
+    }
+    
+    .contentArea ol li p {
+        margin: 0 auto;
+        line-height: 1;
+    }
+    
     .contentArea img {
         display: block;
         width: 100%;
         margin: 40px auto;
+    }
+    
+    .contentArea hr {
+        display: block;
+        width: 5px;
+        height: 1px;
+        background-color: rgb(100, 100, 100);
+        margin: 25px auto 25px 0;
     }
     /****contentArea end****/
     /****page start****/
