@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //選單背景
-    $(window).scroll(function() {
+    function scrollHeaderBg() {
         var scrollVal = $(this).scrollTop();
         if (scrollVal > 80) {
             $('header').addClass('active');
@@ -8,6 +8,10 @@ $(document).ready(function() {
         if (scrollVal <= 80) {
             $('header').removeClass('active');
         } else {}
+    }
+    scrollHeaderBg();
+    $(window).scroll(function() {
+        scrollHeaderBg();
     });
     //按鈕效果
     $('.bt_click').mousedown(function() {
@@ -50,6 +54,4 @@ $(document).ready(function() {
             scrollTop: position
         }, duration);
     });
-    var tt = $('.newsListSelect').val();
-    console.log(tt);
 });
