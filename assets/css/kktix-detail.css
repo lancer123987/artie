@@ -1,8 +1,39 @@
 /****main start***/
 
 .detailBanner {
-    background-image: url(../images/kktixDetail_banner.jpg);
+    background-image: url(../images/detail_bannerBg.jpg);
+}
+
+.detailBgItem {
+    position: absolute;
+    top: -200px;
+    left: calc(50% - 640px);
+    width: 640px;
+}
+
+.detailBgItem2 {
+    position: absolute;
+    top: -50px;
+    left: auto;
+    right: -7.5%;
+    width: 100px;
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .detailBgItem {
+        display: none;
+    }
+    .detailBgItem2 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .detailBgItem2 {
+        display: none;
+    }
 }
 
 
-/****main end***/
+/****main end****/
